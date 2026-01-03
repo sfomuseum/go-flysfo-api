@@ -8,12 +8,15 @@ import (
 	"net/http"
 	"net/url"
 	"path/filepath"
-
+	
 	"github.com/whosonfirst/go-ioutil"
 )
 
 // V1 is the root URL endpoint for version one of the FlySFO API.
-const V1 string = "https://api.flysfo.com/sfo/v1.0"
+const V1 string = "https://api.flysfo.com/sfo"
+
+// ENDPOINT is the root URL endpoint for the unversioned FlySFO API.
+const ENDPOINT string = "https://api.flysfo.com/sfo"
 
 // type Client is a struct for performing requests to the FlySFO API.
 type Client struct {
@@ -26,7 +29,7 @@ type Client struct {
 }
 
 func NewClient(ctx context.Context, apikey string) (*Client, error) {
-	return NewClientWithEndpoint(ctx, V1, apikey)
+	return NewClientWithEndpoint(ctx, ENDPOINT, apikey)
 }
 
 func NewClientWithEndpoint(ctx context.Context, endpoint string, apikey string) (*Client, error) {

@@ -16,7 +16,7 @@ import (
 
 	"github.com/sfomuseum/go-flags/multi"
 	"github.com/sfomuseum/go-flysfo-api"
-	"github.com/sfomuseum/runtimevar"
+	"github.com/aaronland/gocloud/runtimevar"
 )
 
 func main() {

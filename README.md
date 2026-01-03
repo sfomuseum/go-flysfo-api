@@ -39,7 +39,7 @@ Valid options are:
 For example:
 
 ```
-$>./bin/api -apikey 'constant://?val={APIKEY}' -method /offerings/facilities/terminals/ | json_pp | less
+$>./bin/api -apikey 'constant://?val={APIKEY}' -method /v1.0/offerings/facilities/terminals/ | json_pp | less
 
 [
    {

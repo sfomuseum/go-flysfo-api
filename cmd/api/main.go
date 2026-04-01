@@ -14,9 +14,9 @@ import (
 	"net/url"
 	"os"
 
+	"github.com/aaronland/gocloud/runtimevar"
 	"github.com/sfomuseum/go-flags/multi"
 	"github.com/sfomuseum/go-flysfo-api"
-	"github.com/aaronland/gocloud/runtimevar"
 )
 
 func main() {

@@ -8,12 +8,12 @@ import (
 	"net/http"
 	"net/url"
 	"path/filepath"
-	
+
 	"github.com/whosonfirst/go-ioutil"
 )
 
 // V1 is the root URL endpoint for version one of the FlySFO API.
-const V1 string = "https://api.flysfo.com/sfo"
+const V1 string = "https://api.flysfo.com/sfo/v1.0/"
 
 // ENDPOINT is the root URL endpoint for the unversioned FlySFO API.
 const ENDPOINT string = "https://api.flysfo.com/sfo"
